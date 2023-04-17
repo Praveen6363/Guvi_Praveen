@@ -1,0 +1,69 @@
+<html>
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Update account</title>
+</head>
+<body>
+	
+
+<div class="container">
+	<div class="header">
+		<h2>Update Account</h2>
+	</div>
+	<form id="form" class="form"  method="post" name="update">
+		<div class="form-control">
+			<label for="fname">First Name</label>
+			<input type="text"  id="fname" placeholder="first Name" name="fname" required />
+			<small>User name must begin with a character</small>
+		</div>
+		<div class="form-control">
+			<label for="lname">Last Name</label>
+			<input type="text"  id="lname" placeholder="Last Name" name="lname" required/>
+			<small>User name must begin with a character</small>
+		</div>
+        <div class="form-control">
+			<label for="mobile-number">Mobile Number</label>
+			<input type="text"  id="MobileNumber" placeholder="Mobile Number" required  maxlength="10" name="MobileNumber" title="please enter a valid phone number"/>
+			<small>User name must begin with a character</small>
+		</div>
+        <div class="form-control">
+			<label for="dob">Date of Birth</label>
+			<input type="date"  id="dob" placeholder="00-00-0000" name="dob" required />
+			<small>User name must begin with a character</small>
+		</div>
+        <div class="form-control">
+			<label for="age">Age</label>
+			<input type="tel" id="age" placeholder="Age" required  maxlength="3" name="age" title="Enter a valid age" />
+			<small>User name must begin with a character</small>
+		</div>
+        <div class="form-control">
+			<label for="state">State </label>
+			<input type="text"  id="state" placeholder="State" required name="state" title="Enter a valid state" />
+			<small>User name must begin with a character</small>
+		</div>
+        <div class="form-control">
+			<label for="city">City</label>
+			<input type="text"  id="city" placeholder="City" required name="city" title="Enter a valid city"/>
+			<small>User name must begin with a character</small>
+		</div>
+		<div class="form-control">
+			<label for="pin">PIN Code </label>
+			<input type="text"  id="pin" placeholder="PIN Code" required name="pin" maxlength="6" pattern="[0-9]{3}[0-9]{3}" title="Enter a valid pincode"/>
+			<small>User name must begin with a character</small>
+		</div>
+		
+            <p>Already have an account ? <a href="login.html" > signin</a></p>
+        
+				<a href="login.html" ><input class="create-account" type="button" id = "butsave" name = "CreateAccount" class = "update-accout" value="UpdateAccount" ></a>
+	
+        
+	</form>
+
+    
+</div>
+
+
+<script src="./js/profile.js"></script>
+</body>
+</html>
