@@ -1,0 +1,21 @@
+create database praveen;
+
+use praveen
+
+create table Multiples(
+	names varchar(50),
+	email varchar(50),
+	passw varchar(50)
+	primary key(names));
+
+
+create table profiles(
+	fname varchar(25),
+	lname varchar(25),
+	mnumber int(10),
+	dob varchar(25),
+	age int(3),
+	states varchar(20),
+	city varchar(25),
+	pincode int(6),
+	names varchar(50));
